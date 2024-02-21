@@ -8,8 +8,6 @@
     display: flex !important;
     justify-content: space-around !important;
     flex-wrap: wrap !important;
-    background-color: #111116 !important;
-    height: 100vh !important;
     align-items: center !important;
 }
 
@@ -27,13 +25,10 @@
     margin: 20px
 }
 
-.progress::after {
-    content: "%";
-}
-
 .progress .title {
     position: relative;
     z-index: 100;
+    width: 100%;
 }
 
 .progress .overlay {
@@ -105,4 +100,5 @@
         z-index: 100;
         transform: rotate(315deg);
     }
+
 }

@@ -11,6 +11,9 @@ function AboutPage() {
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti amet blanditiis porro totam soluta perspiciatis vero sequi vitae harum suscipit.</p>
                 <ProgressContainer>
                     <ProgressItem from="0" to="85" speed="1800" />
+                    <ProgressItem from="0" to="60" speed="1800" />
+                    <ProgressItem from="0" to="75" speed="1800" />
+                    <ProgressItem from="0" to="95" speed="1800" />
                 </ProgressContainer>
             </div>
         </div>

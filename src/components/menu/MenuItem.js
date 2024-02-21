@@ -1,13 +1,16 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import AppContext from "../../AppContext";
 
 function MenuItem(props) {
-    const [classValue, setClassValue] = useState("");
+    var ctx = useContext(AppContext);
+    var cn = ctx.pageClicked == props.numara ? "aktif" : "";
+
     function aClick() {
-        setClassValue("aktif");
+        ctx.pageChanger(props.page);
+        ctx.pageClick(props.numara);
     }
     return (
-        <li><a onClick={aClick}
-            className={classValue}>{props.text}</a></li>
+        <li><a className={cn} href={props.href} onClick={aClick}>{props.text}</a></li>
     );
 }
 export default MenuItem;
